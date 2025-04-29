@@ -1,0 +1,245 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-color: #E76F51;
+    --secondary-color: #F8E1DB;
+    --color-dark: #3B3735;
+    --white: #fff;
+    --app-bg: #FAF4F2;
+    --primary-font: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    --primary-font-md: 'Roboto-Medium', Arial, Helvetica, sans-serif;
+    --secondary-font: 'Archivo-Black', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--app-bg);
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* app-css */
+
+.container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* component*/
+
+.btn {
+    padding: 2rem 3rem;
+    border: 1px solid black;
+    border-radius: 10rem;
+}
+
+/* header-menu */
+
+.header {
+    padding-top: 3rem;
+    background:
+        linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+        url(../images/header-bg.jpg);
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu__app {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.nav-menu__icon {
+
+}
+
+.nav-menu-desktop {
+    flex-grow: 1;
+}
+
+.nav-menu__list {
+    display: none;
+    padding-left: 2rem;
+}
+
+.nav-menu__item {
+    padding-left: 2rem;
+}
+
+.nav-menu__link {
+    color: #D2D2D2;
+}
+
+.nav-menu__link--active {
+
+}
+
+.nav-menu-btns {
+    display: none;
+}
+
+.nav-menu-btns__link {
+
+}
+
+.nav-menu-btns__link--btn {
+
+}
+
+.nav-menu-mobile {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: -22rem;
+    top: 0;
+    bottom: 0;
+    width: 22rem;
+    padding: 2.5rem;
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.nav-menu-mobile--open {
+    left: 0;
+}
+
+.nav-menu-mobile__title {
+    color: var(--white);
+    font-family: var(--primary-font-md);
+    font-size: 2.7rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.nav-menu-bobile__list {
+}
+
+.nav-menu-mobile__item {
+    margin-top: 1.2rem;
+}
+
+.nav-menu-mobile__link {
+    color: var(--white);
+    position: relative;
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.nav-menu-mobile__link:hover {
+    padding-left: 2.6rem;
+
+}
+
+.nav-menu-mobile__link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.3rem;
+    border-radius: 10rem;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: all 200ms ease-in-out 50ms;
+}
+
+.nav-menu-mobile__link:hover::before {
+    width: 2.3rem;
+}
+
+.nav-menu-mobile-btns {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-mobile-btns__link {
+    color: var(--white);
+    flex-basis: 50%;
+    border: 1px solid white;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 150ms ease-in-out 50ms;
+}
+
+.nav-menu-mobile-btns__link:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.nav-menu-btn {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-menu-btn__line {
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+    position: relative;
+    border-radius: 1rem;
+    transition: all 150ms ease-in-out 50ms;
+}
+
+.nav-menu-btn__line::before,
+.nav-menu-btn__line::after {
+    position: absolute;
+    content: '';
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 150ms ease-in-out 50ms;
+}
+
+.nav-menu-btn__line::before {
+    top: 0.8rem;
+}
+
+.nav-menu-btn__line::after {
+    bottom: 0.8rem;
+}
+
+.nav-menu-btn--open .nav-menu-btn__line {
+    background-color: transparent;
+}
+
+.nav-menu-btn--open .nav-menu-btn__line::before {
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+.nav-menu-btn--open .nav-menu-btn__line::after {
+    transform: translateY(0.8rem) rotate(45deg);
+}
