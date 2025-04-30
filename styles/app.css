@@ -42,9 +42,16 @@ a {
 /* component*/
 
 .btn {
-    padding: 2rem 3rem;
-    border: 1px solid black;
+    width: 20rem;
+    height: 5rem;
     border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--white);
+    background: var(--primary-color);
+    transition: all 150ms ease-in-out 50ms;
 }
 
 /* header-navigation */
@@ -272,3 +279,32 @@ a {
 }
 
 /* Header-content */
+
+.section {
+    margin-top: 13rem;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+
+}
+
+.header-content__title {
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    line-height: 5rem;
+}
+
+.header-content__caption {
+    max-width: 31rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.btn:hover {
+    background-color: #d35e40;
+}
+
+/* Main-services */
