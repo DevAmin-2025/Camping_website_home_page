@@ -329,3 +329,105 @@ a {
 
 /* Main-destinations */
 
+.destinations {
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.destinations__header {
+    font-family: var(--secondary-font);
+    color: var(--color-dark);
+    padding-bottom: 2rem;
+}
+
+.destination-header__title {
+    font-size: 2.6rem;
+    padding-top: 1.3rem;
+    word-spacing: 0.3rem;
+}
+
+.destinations__offer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer {
+    background-color: white;
+    padding: 3rem;
+    color: var(--color-dark);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.offer__img-container {
+    position: relative;
+}
+
+.offer__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.offer__heart-icon {
+    position: absolute;
+    right: 1.8rem;
+    top: 1.8rem;
+    background-color: white;
+    padding: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+}
+
+.offer__price {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 1.1rem;
+    border-radius: 1.4rem;
+    width: 15rem;
+    bottom: -1rem;
+    font-family: var(--primary-font-md);
+}
+
+.offer__title {
+    font-family: var(--secondary-font);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    word-spacing: 0.3rem;
+
+}
+
+.offer__link {
+    margin-top: 3rem;
+    background-color: rgba(141, 141, 141, 10%);
+    color: rgb(141, 141, 141);
+    font-family: var(--primary-font-md);
+}
+
+.offer__link:hover {
+    background: rgb(233 233 233);
+}
+
+.offer-desktop-show {
+    display: none;
+}
+
+.destinations__link {
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.destinations__link:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
