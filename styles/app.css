@@ -155,6 +155,7 @@ a {
     width: 22rem;
     padding: 2.5rem;
     transition: all 200ms ease-in-out 50ms;
+    z-index: 100;
 }
 
 .nav-menu-mobile--open {
