@@ -10,9 +10,7 @@
     .offer__link {
         width: 100%;
     }
-
 }
-
 
 @media screen and (min-width: 576px) {
     .container {
@@ -62,6 +60,19 @@
     .offer-desktop-show {
         display: block;
     }
+
+    .newsletter {
+        flex-direction: row-reverse;
+    }
+
+    .newsletter__content {
+        text-align: left;
+        padding-right: 3rem;
+    }
+
+    .newsletter__title {
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -81,6 +92,10 @@
         font-size: 6rem;
         line-height: 8rem;
     }
+
+    .newsletter__content {
+        padding-right: 12rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -92,6 +107,10 @@
         font-size: 7rem;
         line-height: 9rem;
     }
+
+    .newsletter__visual {
+        flex-basis: 40%;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -101,5 +120,21 @@
 
     .offer {
         width: 32rem;
+    }
+
+    .newsletter__content {
+        padding-right: 17rem;
+    }
+
+    .newsletter {
+        padding: 4rem 7rem;
+    }
+
+    .newsletter__caption {
+        width: 48rem;
+    }
+
+    .form {
+        width: 65rem;
     }
 }

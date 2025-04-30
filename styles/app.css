@@ -419,7 +419,6 @@ a {
 }
 
 .destinations__link {
-    margin-bottom: 10rem;
     margin-top: 3rem;
     background-color: transparent;
     border: 1px solid var(--primary-color);
@@ -431,3 +430,67 @@ a {
     color: var(--white);
 }
 
+/* Main-newsletter */
+
+.newsletter {
+    margin-top: 9rem;
+    background-color: var(--secondary-color);
+    color: var(--color-dark);
+    border-radius: 2rem;
+    padding: 4rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter__img {
+    width: 100%;
+}
+
+.newsletter__title {
+    font-family: var(--secondary-font);
+    font-size: 2.6rem;
+    word-spacing: 0.3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 15rem;
+    margin: auto;
+}
+
+.newsletter__caption {
+    font-family: var(--primary-font-md);
+    padding-bottom: 1rem;
+}
+
+.form {
+    padding: 1.7rem 1.5rem 1.7rem 3rem;
+    background: white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.form__btn {
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 50ms;
+}
+
+.form__btn:hover {
+    background-color: #d35e40;
+}
