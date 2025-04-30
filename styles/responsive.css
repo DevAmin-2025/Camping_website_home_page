@@ -23,6 +23,10 @@
     .container {
         width: 96rem
     }
+
+    .nav-menu-btns {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1200px) {
