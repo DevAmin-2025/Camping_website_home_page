@@ -24,6 +24,7 @@ body {
     background-color: var(--app-bg);
     font-size: 1.6rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* app-css */
@@ -335,6 +336,29 @@ a {
 .destinations {
     text-align: center;
     padding-top: 7rem;
+    position: relative;
+}
+
+.destinations::before,
+.destinations::after {
+    content: '';
+    position: absolute;
+    width: 105rem;
+    height: 105rem;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.destinations::before {
+    background-image: url(../images/svgs/shape1.svg);
+    left: 90rem;
+    top: -42rem;
+}
+
+.destinations::after {
+    background-image: url(../images/svgs/shape2.svg);
+    right: 110rem;
+    top: 50rem;
 }
 
 .destinations__header {
@@ -445,6 +469,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.newsletter::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/svgs/shape3.svg);
+    left: -58rem;
+    right: 0rem;
+    top: -5rem;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .newsletter__img {
